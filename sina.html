@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="CSS/commom.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="wraper">
+<div id="header">
+    <img alt="研究生、教师（含导师）信息交互平台" src="imgs/headphoto.gif" />
+</div>
+<div id="main">
+<div id="main-left"></div>
+<div id="main-middle">
+<div id="bigtitle">用户登录</div> 
+<hr />
+<div id="loginbox">
+
+<form method="post" style=" padding:0; margin:0;" action="NewLoginCheck.asp">
+<div id="usertype">
+<div class="logintitle">用户类别:</div><select id="usertypeselector" name="typeid"><option value="2">研究生</option><option value="3">教师及导师</option><option value="5">高级用户</option></select>
+</div>
+<div id="username">
+<div class="logintitle">用户名:</div><input name="user" type="text" id="usernametext" />
+</div>
+<div id="password">
+<div class="logintitle">用户密码:</div><input name="pass" type="password" id="passwordtext" />
+</div>
+<div id="login"><input id="loginbtn" type="submit" value="登录" />&nbsp; <input type="button" onclick="window.location.href='http://www.gs.zjut.edu.cn/'" value="退出" /></div>
+</form>
+
+</div>
+<div id="tips">
+  <div>
+    <p>用户类别是“研究生”的用户名为学号，初始密码：2017级以前的为学号，2017级及以后为身份证号码最后八位。</p>
+    <p><br />
+      用户类别是“教师及导师”的用户名和初始密码均为人事处工号（八位数,不足八位前面补零）。</p>
+    <p><br />
+      各位用户登录后请尽快修改初始密码。 </p>
+  </div>
+</div>
+<div id="main-right"></div>
+<div style=" clear:both;"></div>
+</div>
+
+<div id="footer">
+Copyright @ 2011 浙江工业大学研究生院&nbsp;中国杭州下城区潮王路18号(310014)&nbsp; <a style=" color:White" href="mailto:qinmiao@zjut.edu.cn">【联系我们】</a>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    
+</script>
+</body>
+</html>
